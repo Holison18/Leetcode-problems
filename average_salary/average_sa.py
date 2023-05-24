@@ -1,8 +1,7 @@
 class Solution:
     def average(self,salary) -> float:
         sum = 0
-        average = 0
-        for i in range(1,len(salary)):
+        for i in range(1,len(salary)-1):
             sum += salary[i]
         average = sum / len(salary)
         return average

@@ -7,8 +7,6 @@ class Solution:
         return average
     
 
-
-
 mysoln = Solution()
 print(mysoln.average([4000,3000,1000,2000]))
 print(mysoln.average([1000,2000,3000]))

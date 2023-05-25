@@ -1,10 +1,13 @@
 class Solution:
     def average(self,salary) -> float:
         sum = 0
-        for i in range(1,len(salary)-1):
-            sum += salary[i]
-        average = sum / len(salary)
-        return average
+        maximum = max(salary)
+        minimum = min(salary)
+        for i in range(len(salary)):
+            if salary[i] != maximum and salary[i] != minimum:
+                sum += salary[i]
+        return sum/(len(salary)-2)
+    
     
 
 mysoln = Solution()

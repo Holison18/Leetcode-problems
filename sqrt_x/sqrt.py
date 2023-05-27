@@ -4,11 +4,12 @@ class solution:
         high = x
 
         # run the code until the desired value is found
-        while True:
+        while low + 1 < high:
             mid = (low + high)//2
-            if mid * mid == x:
+            square = mid * mid
+            if abs(square) == 0.001:
                 break
-            elif mid * mid < x:
+            elif square < x:
                 low = mid
             else:
                 high = mid

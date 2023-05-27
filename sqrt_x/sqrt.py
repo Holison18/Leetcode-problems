@@ -8,7 +8,7 @@ class solution:
             mid = (low + high)//2
             if mid * mid == x:
                 break
-            elif mid * mid < 16:
+            elif mid * mid < x:
                 low = mid
             else:
                 high = mid

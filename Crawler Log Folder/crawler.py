@@ -1,3 +1,4 @@
 class Solution(object):
     def crawlerLogFolder(self, log):
-        pass
+        min_operations = 0
+        

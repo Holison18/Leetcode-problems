@@ -1,7 +1,7 @@
 class Solution(object):
     def crawlerLogFolder(self, logs):
-        # declare a variable to store the current directory (0 for root folder)
-        stack = []
+       
+        stack = [] # create a variable to store the current state or folder
         for log in logs:
             if log == "../":
                 if len(stack) != 0:

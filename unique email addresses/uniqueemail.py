@@ -15,3 +15,5 @@ class Solution(object):
 
 mySoln  = Solution()
 print(mySoln.UniqueEmailAddresses(["kob.by@emali.com","mary@email.com"]))
+print(mySoln.UniqueEmailAddresses(["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]))
+print(mySoln.UniqueEmailAddresses(["a@leetcode.com","b@leetcode.com","c@leetcode.com"]))

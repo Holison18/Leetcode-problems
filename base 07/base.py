@@ -1,17 +1,19 @@
 class Solution(object):
-    def ConvertToBase7(self, num):
+    def ConvertToBase7(self,num):
         """convert to base 7"""
-        if num == 0:
-            return "0"
+        # declare a variable to store the result
+        result = ""
         n = ""
-        if num < 0:
+        if num == 0:
+            result = "0"
+        elif num < 0:
             num *= -1
             n = "-"
-        result = []
         while num > 0:
-            result.append(str(num % 7))
-            num = num // 7
-        return n + ''.join(result[::-1])
+            remainder = num % 7
+            result = str(remainder) + result
+            num = num//7
+        return n + result
 
 
 mySoln = Solution()

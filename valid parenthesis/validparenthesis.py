@@ -13,11 +13,16 @@ class Solution(object):
                                 "]":"[",
                                 "}":"{",}
         for char in s:
-            if char in matching_parenthesis.keys():
+            if char in matching_parenthesis.values():
                 stack.append(char)
-            elif char in matching_parenthesis.values():
+            elif char in matching_parenthesis.keys():
                 if len(stack) == 0 or stack.pop() != matching_parenthesis[char]:
                     return False
             else:
-                return True
+                return False
+        return len(stack) == 0
+            
+mySoln = Solution()
+print(mySoln.isValid("()"))
+print(mySoln.isValid("(]"))
                 
